@@ -1,3 +1,5 @@
+package main;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,12 +14,11 @@ public class GUI extends JFrame{
 
     public void initialize(){
         window.getContentPane().setBackground(Color.BLACK);
-        window.setLayout(new BoxLayout(window, BoxLayout.X_AXIS, null));
+        window.setLayout(new BorderLayout());
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(WIDTH, HEIGHT);
         window.setLocationRelativeTo(null);
         window.setVisible(true);
-
         menu();
     }
 
@@ -34,4 +35,6 @@ public class GUI extends JFrame{
         button.setBounds(x, y, 300, 50);
         return button;
     }
+
+
 }
